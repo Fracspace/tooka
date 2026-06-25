@@ -91,9 +91,9 @@ function CuratedExperiences() {
                 />
 
                 {/* Price */}
-                {/* <div className="absolute font-poppins right-4 top-4 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-[#A35A00] shadow">
+                <div className="absolute font-poppins right-4 top-4 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-[#A35A00] shadow">
                   {service.price}
-                </div> */}
+                </div>
               </div>
 
               {/* Content */}
