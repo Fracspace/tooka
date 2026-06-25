@@ -101,6 +101,12 @@ function Footer() {
               </li>
 
               <li>
+                <a href="/refund" className="hover:text-orange-500">
+                  Refund & Cancellation Policy
+                </a>
+              </li>
+
+              <li>
                 <a href="contact" className="hover:text-orange-500">
                   Contact Us
                 </a>
