@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import { ArrowRight, Star } from "lucide-react";
@@ -6,6 +8,12 @@ import img2 from "../../assets/img2.png";
 import img3 from "../../assets/img3.png";
 
 function HeroSection() {
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  };
   return (
     <section className="relative overflow-hidden py-20">
       <div className="mx-auto max-w-7xl px-6">
@@ -34,7 +42,13 @@ function HeroSection() {
 
             {/* Buttons */}
             <div className="mt-10 flex flex-col md:flex-row md:flex-wrap gap-4">
-              <button className="flex cursor-pointer w-[80vw] md:w-auto font-montserrat items-center gap-2 rounded-2xl bg-[#B86A00] px-8 py-4 font-semibold text-white transition hover:opacity-90">
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("contact");
+                }}
+                className="flex cursor-pointer w-[80vw] md:w-auto font-montserrat items-center gap-2 rounded-2xl bg-[#B86A00] px-8 py-4 font-semibold text-white transition hover:opacity-90"
+              >
                 Partner With Us
                 <ArrowRight size={18} />
               </button>

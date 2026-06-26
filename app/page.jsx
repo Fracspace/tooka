@@ -15,7 +15,7 @@ export default function Home() {
         <Navbar />
       </div>
 
-      <div id="discover mt-25 md:mt-15">
+      <div id="discover">
         <HeroSection />
       </div>
 

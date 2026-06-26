@@ -19,7 +19,11 @@ function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-gray-200 bg-[#F8F5F3] px-8 py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image src={Logo} alt="logo" className="w-[40vw] h-[8vh] md:w-[14vw] md:h-[10vh]" />
+          <Image
+            src={Logo}
+            alt="logo"
+            className="w-[40vw] h-[8vh] md:w-[14vw] md:h-[10vh]"
+          />
           {/* <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#F59E0B]">
             <span className="text-lg font-bold text-white">✦</span>
           </div> */}
@@ -36,12 +40,12 @@ function Navbar() {
               setSelected("discover");
               scrollToSection("discover");
             }}
-            className="relative font-montserrat text-sm  text-[#A46A00]"
+            className="relative font-montserrat text-sm  text-gray-500 hover:text-gray-800"
           >
             Discover
-            {selected == "discover" && (
+            {/* {selected == "discover" && (
               <span className="absolute -bottom-2 left-0 h-[2px] w-full bg-[#C97A00]" />
-            )}
+            )} */}
           </Link>
 
           <Link
@@ -54,9 +58,9 @@ function Navbar() {
             className="text-sm font-montserrat  text-gray-500 transition hover:text-gray-800"
           >
             Why Us
-            {selected == "whyus" && (
+            {/* {selected == "whyus" && (
               <span className="absolute -bottom-2 left-0 h-[2px] w-full bg-[#C97A00]" />
-            )}
+            )} */}
           </Link>
 
           <Link
@@ -66,12 +70,12 @@ function Navbar() {
               setSelected("aboutus");
               scrollToSection("aboutus");
             }}
-            className="text-sm font-montserrat font-medium text-gray-500 transition hover:text-gray-800"
+            className="text-sm font-montserrat  text-gray-500 transition hover:text-gray-800"
           >
             About Us
-            {selected == "aboutus" && (
+            {/* {selected == "aboutus" && (
               <span className="absolute -bottom-2 left-0 h-[2px] w-full bg-[#C97A00]" />
-            )}
+            )} */}
           </Link>
 
           {/* <Link
