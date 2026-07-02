@@ -5,12 +5,14 @@ import logoImg from "../../assets/logo.png";
 import Image from "next/image";
 
 function Footer() {
+  
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
       block: "start"
     });
   };
+
   return (
     <footer className="bg-[#FAF7F5] border-t border-gray-200">
       <div className="mx-auto max-w-7xl px-6 py-16">
@@ -143,7 +145,7 @@ function Footer() {
         <div className="mt-12 border-t border-gray-200 pt-6">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-col">
             <p>© 2026 Tooka Wellness. All rights reserved.</p>
-            <p>Co-Powered By METROPODZ PRIVATE LIMITED</p>
+            <p>Co-Powered By METROPODZ LIVING PRIVATE LIMITED</p>
 
             <div className="flex items-center gap-2">
               {/* <span>English (US)</span> */}
