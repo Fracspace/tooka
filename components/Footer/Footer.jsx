@@ -141,8 +141,9 @@ function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 border-t border-gray-200 pt-6">
-          <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-row">
+          <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-500 md:flex-col">
             <p>© 2026 Tooka Wellness. All rights reserved.</p>
+            <p>Co-Powered By METROPODZ PRIVATE LIMITED</p>
 
             <div className="flex items-center gap-2">
               {/* <span>English (US)</span> */}
