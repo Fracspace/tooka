@@ -3,8 +3,9 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo1.png";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 function Navbar() {
   const scrollToSection = (id) => {
@@ -13,6 +14,7 @@ function Navbar() {
       block: "start"
     });
   };
+  const router = useRouter();
   const [selected, setSelected] = useState();
   return (
     <div className="w-full px-4 py-3">
@@ -22,7 +24,7 @@ function Navbar() {
           <Image
             src={Logo}
             alt="logo"
-            className="w-[40vw] h-[8vh] md:w-[14vw] md:h-[10vh]"
+            className="w-[40vw] h-[7vh] md:w-[12vw] md:h-[8vh]"
           />
           {/* <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#F59E0B]">
             <span className="text-lg font-bold text-white">✦</span>
@@ -89,8 +91,7 @@ function Navbar() {
         {/* CTA */}
         <button
           onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("contact");
+            router.push("https://portal.tooka.app/");
           }}
           className="cursor-pointer font-montserrat rounded-full bg-[#F59E0B] px-4 py-2 ml-4 md:px-6 md:py-3 text-sm font-semibold text-white transition hover:opacity-90"
         >

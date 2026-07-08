@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import { ArrowRight, Star } from "lucide-react";
 import img1 from "../../assets/img1.png";
 import img2 from "../../assets/img2.png";
 import img3 from "../../assets/img3.png";
+import { useRouter } from "next/navigation";
 
 function HeroSection() {
   const scrollToSection = (id) => {
@@ -14,6 +15,8 @@ function HeroSection() {
       block: "start"
     });
   };
+
+  const router = useRouter();
   return (
     <section className="relative overflow-hidden py-20">
       <div className="mx-auto max-w-7xl px-6">
@@ -22,9 +25,9 @@ function HeroSection() {
           <div>
             {/* Badge */}
             <div className="mb-8 inline-flex items-center gap-2 rounded-full bg-[#F9EED8] px-4 py-2">
-              <span className="text-xs font-poppins font-semibold uppercase tracking-wide text-[#B7791F]">
+              {/* <span className="text-xs font-poppins font-semibold uppercase tracking-wide text-[#B7791F]">
                 ✨ Wellness Made Simple
-              </span>
+              </span> */}
             </div>
 
             {/* Heading */}
@@ -44,8 +47,7 @@ function HeroSection() {
             <div className="mt-10 flex flex-col md:flex-row md:flex-wrap gap-4">
               <button
                 onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection("contact");
+                  router.push("https://portal.tooka.app/");
                 }}
                 className="flex cursor-pointer w-[80vw] md:w-auto font-montserrat items-center gap-2 rounded-2xl bg-[#B86A00] px-8 py-4 font-semibold text-white transition hover:opacity-90"
               >

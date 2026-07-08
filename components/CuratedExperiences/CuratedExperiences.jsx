@@ -11,7 +11,6 @@ const services = [
     id: 1,
     title: "Deep Tissue Massage",
     duration: "60 mins",
-    price: "₹1999",
     badge: "MOST POPULAR",
     badgeColor: "bg-orange-200 text-orange-800",
     image: deepTissueImg,
@@ -22,7 +21,6 @@ const services = [
     id: 2,
     title: "Aromatherapy Glow",
     duration: "75 mins",
-    price: "₹2499",
     badge: "REJUVENATING",
     badgeColor: "bg-green-200 text-green-800",
     image: therapyOneImg,
@@ -33,7 +31,6 @@ const services = [
     id: 3,
     title: "Total Zen Package",
     duration: "120 mins",
-    price: "₹3999",
     badge: "PREMIUM",
     badgeColor: "bg-yellow-200 text-yellow-800",
     image: totalImg,
@@ -91,9 +88,9 @@ function CuratedExperiences() {
                 />
 
                 {/* Price */}
-                <div className="absolute font-poppins right-4 top-4 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-[#A35A00] shadow">
+                {/* <div className="absolute font-poppins right-4 top-4 rounded-full bg-white/90 px-4 py-2 text-sm font-bold text-[#A35A00] shadow">
                   {service.price}
-                </div>
+                </div> */}
               </div>
 
               {/* Content */}

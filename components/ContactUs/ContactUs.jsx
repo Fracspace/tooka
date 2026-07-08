@@ -22,9 +22,9 @@ export default function ContactUs() {
         </div>
 
         {/* Content */}
-        <div className="grid gap-8 lg:grid-cols-3">
+        <div className="flex flex-col md:flex-row">
           {/* Contact Form */}
-          <div className="lg:col-span-2 rounded-2xl bg-white p-8 shadow-sm">
+          {/* <div className="lg:col-span-2 rounded-2xl bg-white p-8 shadow-sm">
             <h3 className="mb-8 text-2xl font-montserrat font-semibold text-gray-900">
               Send us a Message
             </h3>
@@ -101,10 +101,10 @@ export default function ContactUs() {
                 <Send size={18} />
               </button>
             </form>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
-          <div className="space-y-5">
+          <div className=" space-y-5 md:space-x-5 flex flex-col md:flex-row">
             <div className="rounded-2xl bg-white p-6 shadow-sm">
               <div className="flex gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-50">
@@ -118,6 +118,10 @@ export default function ContactUs() {
 
                   <h4 className="mt-1 font-poppins font-semibold text-gray-900">
                     hello@tooka.com
+                  </h4>
+
+                  <h4 className="mt-1 font-poppins font-semibold text-gray-900">
+                    +91 92479 52343
                   </h4>
 
                   <p className="mt-1 font-poppins text-sm text-gray-500">

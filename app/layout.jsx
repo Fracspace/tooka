@@ -13,7 +13,11 @@ const montserrat = Montserrat({
 
 export const metadata = {
   title: "Tooka",
-  description: "Take a break"
+  description: "Take a break",
+
+  icons: {
+    icon: "/favicon.png"
+  }
 };
 
 export default function RootLayout({ children }) {

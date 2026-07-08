@@ -3,7 +3,9 @@ import ContactUs from "@/components/ContactUs/ContactUs";
 import CuratedExperiences from "@/components/CuratedExperiences/CuratedExperiences";
 import Footer from "@/components/Footer/Footer";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import MobileAppBanner from "@/components/MobileAppBanner/MobileAppBanner";
 import Navbar from "@/components/Navbar/Navbar";
+import PartnerWithUs from "@/components/PartnerWithUs/PartnerWithUs";
 import SpaListings from "@/components/SpaListings/SpaListings";
 import TookaDifference from "@/components/TookaDifference/TookaDifference";
 import Image from "next/image";
@@ -29,6 +31,14 @@ export default function Home() {
 
       <div id="aboutus">
         <SpaListings />
+      </div>
+
+      <div>
+        <PartnerWithUs />
+      </div>
+
+      <div>
+        <MobileAppBanner />
       </div>
 
       <div id="contact">
