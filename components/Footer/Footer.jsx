@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 // import { Globe, Instagram, Youtube, Send } from "lucide-react";
-import logoImg from "../../assets/logo.png";
+import logoImg from "../../assets/logo1.png";
 import Image from "next/image";
 
 function Footer() {
-  
+
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
